@@ -4,6 +4,12 @@ class SQLRunner
   def initialize(db)
     @db = db
   end
+  # 
+  # def execute_sample_sql
+  #   self.execute_create_sql
+  #   self.execute_insert_sql
+  #   self.execute_data
+  # end
 
   def execute_create_sql
     sql = File.read('lib/create.sql')
